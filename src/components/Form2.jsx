@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Contact = () => {
+const Form2 = () => {
   return (
-    <div>
-    <div className="min-h-screen flex  justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-no-repeat bg-cover relative items-center">
+    
+<div className="min-h-screen flex  justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-no-repeat bg-cover relative items-center">
 	<div className="absolute bg-black bg-opacity-30 backdrop-blur-sm opacity-60 inset-0 z-0"></div>
 	<div className="max-w-md w-full space-y-8 p-10 bg-white rounded-xl z-10">
 		<div className="text-center">
@@ -66,8 +66,7 @@ const Contact = () => {
 		</form>
 	</div>
 </div>
-  </div>
   )
 }
 
-export default Contact;
+export default Form2;
