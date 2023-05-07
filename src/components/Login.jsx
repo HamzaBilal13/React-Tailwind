@@ -1,7 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 

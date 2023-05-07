@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import Home from './Home';
-import Gallery from './Gallery';
+import Portfolio from './Portfolio';
 import Services from './Services';
 import About from './About';
 import Contact from './Contact';
 import Login from './Login';
 import Form2 from './Form2';
 import { Routes, Route, Link } from 'react-router-dom';
-import { MdLogin } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -15,9 +14,9 @@ const Navbar = () => {
   const handleOnClose = () => setShowMyModal(false);
   return (
 
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="absolute inset-x-0 top-0 z-50 container mx-auto">
 
-      <nav className="bg-white flex items-center justify-between p-4 lg:px-8 border-b shadow" aria-label="Global">
+      <nav className="flex items-center justify-between p-4 lg:px-8 border-b shadow" aria-label="Global">
         <div className="flex lg:flex-1">
 
           <h1 className="font-medium">Hamza Bilal</h1>
@@ -31,7 +30,7 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
-          <Link to="/Gallery" className="text-sm font-semibold leading-6 text-gray-900">Portfolio</Link>
+          <Link to="/Portfolio" className="text-sm font-semibold leading-6 text-gray-900">Portfolio</Link>
           <Link to="/Services" className="text-sm font-semibold leading-6 text-gray-900">Services</Link>
           <Link to="/About" className="text-sm font-semibold leading-6 text-gray-900">About</Link>
           <Link to="/Contact" className="text-sm font-semibold leading-6 text-gray-900">Contact</Link>
@@ -57,7 +56,7 @@ const Navbar = () => {
       </nav>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/Gallery" element={<Gallery />}></Route>
+        <Route path="/Portfolio" element={<Portfolio />}></Route>
         <Route path="/Services" element={<Services />}></Route>
         <Route path="/About" element={<About />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
